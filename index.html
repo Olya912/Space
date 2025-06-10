@@ -53,6 +53,16 @@
             display: block; /* Робимо iframe блочним елементом, щоб margin: auto працював */
             margin: 0 auto; /* Центруємо iframe по горизонталі */
         }
+        .site-footer {
+            background-color: #0c0738;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: white; /* Переконайтесь, що текст видно на фоні */
+            padding: 20px 0; /* Додаємо внутрішні відступи */
+        }        
     </style>
 </head>
 <body>
@@ -66,13 +76,14 @@
         <h1 class="h1">Космічна мозаїка</h1>
         <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home?interactPrompt=true" allowfullscreen></iframe>
         <p>3D модель зроблена Nassa</p>
-
-        <div style="height: 300px; background-color: #0c0738; margin-top: 20px;"></div>
-
     </main>
-
+    
     <footer>
         <p>© 2025 Olya912. Усі права захищено.</p>
     </footer>
-</body>
+    
+    <div class="site-footer">
+        <p>© 2025 Olya912. Усі права захищено.</p>
+    </div>
+</body
 </html> 
