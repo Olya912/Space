@@ -44,6 +44,15 @@
             font-size: 94px;
             text-align: center;
         }
+                /* Стилі для iframe */
+        iframe {
+            border: none; /* Забираємо рамку навколо iframe */
+            width: 800px; /* Збільшуємо ширину */
+            height: 600px; /* Встановлюємо висоту */
+            max-width: 95%; /* Забезпечуємо адаптивність на менших екранах */
+            display: block; /* Робимо iframe блочним елементом, щоб margin: auto працював */
+            margin: 0 auto; /* Центруємо iframe по горизонталі */
+        }
     </style>
 </head>
 <body>
@@ -55,7 +64,7 @@
 
     <main>
         <h1 class="h1">Космічна мозаїка</h1>
-        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home?interactPrompt=true" allowfullscreen width="300"></iframe>
+        <iframe src="https://eyes.nasa.gov/apps/solar-system/#/home?interactPrompt=true" allowfullscreen ></iframe>
     </main>
 
     <footer>
