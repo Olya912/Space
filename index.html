@@ -15,8 +15,20 @@
         header {
             background-color: #1a1a40;
             padding: 20px;
-            text-align: center;
             font-size: 22px;
+            /* Flexbox для розміщення елементів в один ряд */
+            display: flex; /* Робить header гнучким контейнером */
+            justify-content: space-between; /* Розносить елементи: текст ліворуч, зображення праворуч */
+            align-items: center; /* Вирівнює елементи по центру по вертикалі */
+        }
+
+        header p {
+            margin: 0; /* Видаляємо стандартні зовнішні відступи параграфа, щоб не заважали Flexbox */
+        }
+
+        header img {
+            width: 30px; /* Задаємо ширину зображення */
+            height: auto; /* Автоматично підтримуємо пропорції */
         }
 
         footer {
@@ -28,7 +40,7 @@
             bottom: 0;
             width: 100%;
         }
-        .h1{
+        .h1 {
             font-size: 94px;
             text-align: center;
         }
@@ -36,15 +48,16 @@
 </head>
 <body>
     <header>
-        <p  align="left">Мій космічний сайт</p> <img src="img/srch-removebg-preview.png" align="right" width="30">>
+        <p>Мій космічний сайт</p>
+        <img src="img/srch-removebg-preview.png" alt="Пошук" width="30">
     </header>
 
     <main>
-        <h1><p >Космічна мозаїка</p></h1>
+        <h1 class="h1">Космічна мозаїка</h1>
     </main>
 
     <footer>
         <p>© 2025 Olya912. Усі права захищено.</p>
     </footer>
 </body>
-</html>
+</html> 
